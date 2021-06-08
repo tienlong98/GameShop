@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login/Register</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="css/demologin.css" media="all" />
+  <link rel="stylesheet prefetch" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900|RobotoDraft:400,100,300,500,700,900">
+<link rel="stylesheet prefetch" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+ 
+</head>
+<body>
+
+<!-- Form Module-->
+<div class="module form-module">
+  <div class="toggle"><i class="fa fa-times fa-pencil"></i>
+    <div class="tooltip">Click Me</div>
+  </div>
+  <div class="form">
+    <h2>Login to your account</h2>
+    <form>
+      <input type="text" placeholder="Username" name="txt1" required />
+      <input type="password" placeholder="Password" name="txt2" required />
+      <a href="#" ><button>Login</button></a>
+    </form>
+  </div>
+  <div class="form">
+    <h2>Create an account</h2>
+    <form>
+      <input type="text" placeholder="Username" required/>
+      <input type="password" placeholder="Password" required/>
+      <input type="email" placeholder="Email Address" required pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}"/>
+      <input type="number" placeholder="Phone Number"  minlength="10"  maxlength="11" required/>
+      <button >Register</button>
+    </form>
+  </div>
+  <div class="cta"><a href="#/">Forgot your password?</a></div>
+</div>
+
+
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript">
+     // Toggle Function
+$('.toggle').click(function(){
+  // Switches the Icon
+  $(this).children('i').toggleClass('fa-pencil');
+  // Switches the forms  
+  $('.form').animate({
+    height: "toggle",
+    'padding-top': 'toggle',
+    'padding-bottom': 'toggle',
+    opacity: "toggle"
+  }, "slow");
+});
+</script>
+
+</body>
+</html>

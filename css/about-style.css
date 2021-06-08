@@ -1,0 +1,23 @@
+content .page {
+  margin: 7em 5em 5em 5em;
+  background-color: white;
+  border-radius: 1em; }
+  content .page div div .about-logo {
+    margin-top: 2em; }
+  content .page .about-text {
+    padding: 2em 5em 2em 5em; }
+    content .page .about-text h1 {
+      text-align: center;
+      margin: 1em; }
+  content .page .hero-info {
+    padding: 2em 5em 2em 5em; }
+    content .page .hero-info div .about-logo {
+      padding: 1em; }
+    content .page .hero-info div .hero-text {
+      padding: 1em; }
+  content .page .input-comment {
+    padding: 0em 5em 2em 5em; }
+  content .page .comment {
+    padding: 0em 5em 2em 5em; }
+
+/*# sourceMappingURL=about-style.css.map */
